@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supprimer la Location</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+  <h2>Supprimer la Location</h2>
+  <p>Êtes-vous sûr de vouloir supprimer cette location ?</p>
+  <ul class="list-unstyled">
+    <li><strong>Voiture :</strong> <span th:text="${location.voiture.modele}"></span> (<span th:text="${location.voiture.immatriculation}"></span>)</li>
+    <li><strong>Date de Début :</strong> <span th:text="${location.dateDebut}"></span></li>
+    <li><strong>Date de Fin :</strong> <span th:text="${location.dateFin}"></span></li>
+  </ul>
+  <form method="post" th:action="@{/delete-location(id=${location.id})}">
+    <button type="submit" class="btn btn-danger">Confirmer la suppression</button>
+    <a href="/location-detail" class="btn btn-secondary">Annuler</a>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supprimer la Voiture</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+  <h2>Supprimer la Voiture</h2>
+  <p>Êtes-vous sûr de vouloir supprimer cette voiture ?</p>
+  <ul class="list-unstyled">
+    <li><strong>Modèle :</strong> <span th:text="${voiture.modele}"></span></li>
+    <li><strong>Immatriculation :</strong> <span th:text="${voiture.immatriculation}"></span></li>
+    <li><strong>Prix de Location :</strong> <span th:text="${voiture.prixLocation}"></span> DH</li>
+  </ul>
+  <form th:action="@{/delete-voiture/{id}(id=${voiture.id})}" method="post" style="display: inline;">
+
+    <button type="submit" class="btn btn-danger">Confirmer la suppression</button>
+    <a href="/list-voitures" class="btn btn-secondary">Annuler</a>
+  </form>
+</div>
+</body>
+</html>

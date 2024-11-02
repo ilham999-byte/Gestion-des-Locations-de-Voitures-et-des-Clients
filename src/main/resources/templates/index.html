@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil - Gestion des Locations de Voitures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 15px 0;
+        }
+        a {
+            text-decoration: underline; /* Souligner les liens */
+            color: #007bff;
+            font-weight: bold;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #2A6F55; /* Vert émeraude foncé */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #4CA382; /* Vert émeraude clair au survol */
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+<h1>Accueil - Gestion des Locations de Voitures et des Clients</h1>
+
+<nav>
+    <ul>
+        <li><a href="/list-voitures">Liste des Voitures Disponibles</a></li>
+        <li><a href="/location-detail">Détail des Locations par Client</a></li>
+    </ul>
+</nav>
+
+<!-- Bouton pour ajouter une nouvelle location -->
+<p>
+    <a href="/add-location" class="button">Ajouter une Nouvelle Location</a>
+</p>
+
+<footer>
+    <p>&copy; 2024 Gestion des Locations de Voitures</p>
+</footer>
+</body>
+</html>
