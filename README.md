@@ -7,6 +7,7 @@
 4. [Entités](#entités)
 5. [Technologies Utilisées](#technologies-utilisées)
 6. [Installation](#installation)
+7. [Lien vers la vidéo de démonstration](#lien-vers-la-vidéo-de-démonstration)
 
 
 ## Description
@@ -58,6 +59,9 @@ Le projet est construit sur une architecture MVC (Modèle-Vue-Contrôleur) :
 ## Utilisation
 - Pour louer une voiture, naviguer vers la Liste des Voitures et sélectionner la voiture souhaitée.
 -Pour voir les détails des locations, aller à la Détail des Locations.
+
+## lien vers la vidéo de démonstration :
+https://drive.google.com/file/d/1pPRi2A1nhJJpzvJdRy4VhDTwBK8Onm7u/view?usp=sharing
  
 
 
